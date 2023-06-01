@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Jerald's Portfolio</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        {{-- links --}}
+        <link rel="stylesheet" href="{{asset('css/app.css')}}"> 
+        <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+        <link rel="stylesheet" href="{{asset('css/effects.css')}}">
+
+    </head>
+    <body>
+
+        <div id="section1">
+            <div class="header-title wire flex-parent">
+                <h1>Jerald E Casulla</h1>
+            </div>
+            <div class="header-profile wire flex-parent">
+                <img src="{{asset('image/profile.png')}}" alt="">
+            </div>
+            <div class="header-contact wire flex-parent">
+                <div class=" contact-parent wire flex-parent">
+                    <div class=" contact-item wire flex-parent">
+                        <a href=""><img src="{{asset('image/linkedin.png')}}" alt=""></a>
+                    </div>
+                    <div class=" contact-item wire flex-parent">
+                        <a href=""><img src="{{asset('image/github.png')}}" alt=""></a>
+                    </div>
+                    <div class=" contact-item wire flex-parent">
+                        <a href=""><img src="{{asset('image/facebook.png')}}" alt=""></a>  
+                    </div>
+                    <div class=" contact-item wire flex-parent">
+                        <a href=""><img src="{{asset('image/instagram.png')}}" alt=""></a>
+                    </div>  
+                    <div class=" contact-item wire flex-parent"> 
+                        <a href=""><img src="{{asset('image/apple.png')}}" alt=""></a>   
+                    </div>
+                </div>
+            </div>
+            <div class="content-about wire flex-parent">
+                <div class="text-parent ">
+                    <p>
+                        Hello and thank you for exploring! My name is Jerald,
+                        and I'm a passionate programmer who derives excitement and satisfaction,
+                        from the process of building experiences.
+                    </p>
+                </div>
+            </div>
+            <div class="content-nav wire">
+                <nav>
+                    <ul class=" wire">
+                        <li class="glow-on-hover">
+                            <a href="#section2">Projects</a>
+                        </li>
+                        <li class="glow-on-hover">
+                            <a href="">Research</a>
+                        </li>
+                        <li class="glow-on-hover">
+                            <a href="">Skills</a>
+                        </li>
+                        <li class="glow-on-hover">
+                            <a href="">Education</a>
+                        </li>
+                        <li class="glow-on-hover">
+                            <a href="">Experience</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="header-title wire flex-parent">
+                <h2>My Projects</h2>
+            </div>  
+            
+            <div class="projects wire">
+                <div class="project wire">
+                    <div class="title wire"><h3>Sign Language Recognition Mobile App</h3></div>
+                    <div class="container wire">
+                        <div class="potrait-frame wire">
+                            <img  src="{{asset('image/slrs1.jpg')}}" alt="">
+                        </div>
+                        <div class="description wire flex-parent">
+                            <p>description description description description</p>
+                        </div>
+                    </div>
+                    <div class="container wire">
+                        <div class="description wire flex-parent">
+                            <p>description description description description</p>
+                        </div>
+                        <div class="potrait-video wire">
+                            <video  id="slrs2" src="{{asset('video/slrs2.mp4')}}" controls autoplay>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="project wire">
+                    <div class="title wire"><h3>Sign Language Recognition Mobile App</h3></div>
+                    <div class="container wire">
+                        <div class="potrait-frame wire">
+                            <img  src="{{asset('image/slrs1.jpg')}}" alt="">
+                        </div>
+                        <div class="description wire flex-parent">
+                            <p>description description description description</p>
+                        </div>
+                    </div>
+                    <div class="container wire">
+                        <div class="description wire flex-parent">
+                            <p>description description description description</p>
+                        </div>
+                        <div class="potrait-frame wire">
+                            {{-- <video  id="slrs4" src="video/slrs4.mp4" controls autoplay>
+                                Your browser does not support the video tag.
+                            </video> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class='light x1'></div>
+        <div class='light x2 light-res'></div>
+        <div class='light x3'></div>
+        <div class='light x4 light-res'></div>
+        <div class='light x5'></div>
+        <div class='light x6 light-res'></div>
+        <div class='light x7'></div>
+        <div class='light x8 light-res'></div>
+        <div class='light x9'></div>
+
+
+        
+        <div class="top-div wire"><a href="#section1" class="top">Top</a></div>
+    </body>
+
+    <script>
+        // Function to check if an element is visible in the viewport
+        function isElementVisible(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      
+        // Function to autoplay the video when it becomes visible
+        function autoplayVideo() {
+          var video = document.getElementById('slrs1');
+          if (isElementVisible(video)) {
+            video.play();
+          }
+        }
+      
+        // Call the autoplayVideo function when the page loads and when scrolling
+        document.addEventListener('DOMContentLoaded', autoplayVideo);
+        window.addEventListener('scroll', autoplayVideo);
+      </script>
+</html>
