@@ -1,0 +1,14 @@
+
+/* .wire{
+    border: 1px solid black;
+} */
+
+.flex-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m1vw{
+    margin: 1vw;
+}
