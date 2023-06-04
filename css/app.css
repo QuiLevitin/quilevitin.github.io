@@ -197,29 +197,50 @@ nav ul li a{
     justify-content: center;
 }
 
-.projects .potrait-video{
-    flex-grow: initial;
-    margin: 10px;
-    height: 480px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+.projects .container-grid {
+    display: grid;
+    padding: 5px;
+    margin-bottom: 1vw;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Gap between grid items */
+}
+
+.grid22{
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+}
+
+.projects .container-grid{
+    display: grid;
+    padding: 5px;
+    margin-bottom: 1vw;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+    gap: 20px; /* Gap between grid items */
 }
 
 .projects .potrait-video video{
-    height: 480px;
+    flex-grow: initial;
+    margin: 10px;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 
 
-
-.projects .potrait-frame{
+.projects .landscape-frame img{
     flex-grow: initial;
-    margin: 10px;
-    height: 480px;
+    width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .projects .potrait-frame img{
-    height: 480px;  
+    height: 300px;  
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .projects .description{
