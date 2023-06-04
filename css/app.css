@@ -21,7 +21,7 @@ html, body {
 
 body {
     overflow: auto; /* Enable scrolling */
-    scrollbar-width: none; /* Hide the scrollbar for modern browsers */
+    scrollbar-width: none; 
     -ms-overflow-style: none; 
     /* box-sizing: border-box;
     border: 5px solid white; */
